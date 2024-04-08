@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import WelcomeView from '@/views/WelcomeView.vue'
+import WelcomeView from '@/views/welcome/WelcomeView.vue'
 import AlliancesView from '@/views/AlliancesView.vue'
 import EventsView from '@/views/EventsView.vue'
 import RegistrationAllianceView from '@/views/RegistrationAllianceView.vue'

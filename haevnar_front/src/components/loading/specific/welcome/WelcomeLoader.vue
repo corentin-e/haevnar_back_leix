@@ -1,8 +1,8 @@
 <script setup lang="ts">
     import { useThemeStore } from '@/stores/app-store'
 
-    import WelcomeLoaderButton from '../../../button/buttons_specific/WelcomeLoaderButton.vue'
-    import SwitchScreenMode from '../../../switch/switch_specific/SwitchScreenMode.vue'
+    import WelcomeLoaderButton from '../../../button/specific/WelcomeLoaderButton.vue'
+    import SwitchScreenMode from '../../../switch/specific/SwitchScreenMode.vue'
 
 
     const theme = useThemeStore()

@@ -3,7 +3,7 @@
     import { computed } from 'vue'
     import { useThemeStore } from '@/stores/app-store'
 
-    import SwitchScreenMode from '@/components/switch/switch_specific/SwitchScreenMode.vue';
+    import SwitchScreenMode from '@/components/switch/specific/SwitchScreenMode.vue';
 
     import LogoTitleHaevnarBlack from '../assets/logos/logo_haevnar_black_title.png'
     import LogoTitleHaevnarWhite from '../assets/logos/logo_haevnar_white_title.png'

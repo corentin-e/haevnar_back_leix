@@ -3,7 +3,7 @@ import { ref, computed, watch } from 'vue'
 
 import { useThemeStore } from '@/stores/app-store'
 
-import WelcomeLoader from '@/components/loading/loading_specific/welcome/WelcomeLoader.vue'
+import WelcomeLoader from '@/components/loading/specific/welcome/WelcomeLoader.vue'
 import HeaderPage from '@/components/HeaderPage.vue'
 
 const theme = useThemeStore()
@@ -39,7 +39,7 @@ const loadApplication = () => {
 
 <template >
   <div
-    class="w-100 transition-all duration-500 theme-mode"
+    class="w-100 transition-all duration-500 theme-mode h-screen"
   >
     <WelcomeLoader
       v-if="loaderActive"
