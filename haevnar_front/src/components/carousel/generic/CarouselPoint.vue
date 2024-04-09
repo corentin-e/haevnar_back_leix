@@ -1,28 +1,25 @@
 <script setup lang="ts">
 
  defineProps({
-    actualities: Array,
+    slides: Array,
   })
 
 </script>
 
 <template>
-    <div 
+    <div
         class="flex w-full"
     >
-        <div class="w-1/2">
+        <div class="w-1/2 p-5">
             <div class="flex justify-between">
-                <h2>"Titre"</h2>
-                <h2>03-03-24</h2>
+                <span class="font-bold">"Titre"</span>
+                <span class="font-bold">03-03-24</span>
             </div>
-            <span>
-                Test
-                Text 
-                Pour
-                Carousel
+            <span class="p-2">
+                Test Text Pour Carousel
             </span>
         </div>
-        <div class="w-1/2 bg-haev_white">
+        <div class="w-1/2 h-56 bg-haev_white rounded-lg shadow-2xl">
         </div>
     </div>
 </template>

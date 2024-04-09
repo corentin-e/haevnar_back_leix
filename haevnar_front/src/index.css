@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Slackside+One&display=swap");
 
-
-html, body {
-  font-family: 'Saira', sans-serif;
+html,
+body {
+  font-family: "Saira", sans-serif;
 }
 
 #app {
-  font-family: 'Saira', sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 :root {
-  --haev_blue: #2D72A4;
+  --haev_blue: #2d72a4;
   --haev_dark: #323436;
-  --haev_orange: #F77C04;
-  --haev_white: #E4E4E4;
+  --haev_orange: #f77c04;
+  --haev_white: #e4e4e4;
 
   /* Dark Theme */
   --haev_text_mode_dark: var(--haev_white);
@@ -28,7 +28,7 @@ html, body {
 
   --bg_app: var(--haev_bg_mode_dark);
   --text_app: var(--haev_text_mode_dark);
-  --icon_app: var( --haev_icon_mode_dark);
+  --icon_app: var(--haev_icon_mode_dark);
 }
 
 .theme-mode {

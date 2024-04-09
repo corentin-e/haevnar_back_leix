@@ -8,9 +8,9 @@ const actualitiesData = ref([])
 </script>
 
 <template>
-    <div 
-        class="flex w-full"
+    <div
+        class="flex w-full mt-5"
     >
-        <CarouselPoint :actialities="actualitiesData"/>
+        <CarouselPoint :slides="actualitiesData"/>
     </div>
 </template>

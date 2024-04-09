@@ -39,7 +39,7 @@ const loadApplication = () => {
 
 <template >
   <div
-    class="w-100 transition-all duration-500 theme-mode h-screen"
+    class="w-100 transition-all duration-500 theme-mode h-full"
   >
     <WelcomeLoader
       v-if="loaderActive"

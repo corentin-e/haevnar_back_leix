@@ -26,9 +26,23 @@ import WelcomeImg from '@/assets/images/welcome-image.png'
               Chez nous, vous trouverez une place pour vous et les votres, que vous soyez un vétéran de l'espace ou un nouveau venu dans l'univers de Star Citizen.
             </p>
           </div>
-          <img :src="LogoShipHaevnarWhite" alt="welcome image" class="w-1/5">
+          <img :src="LogoShipHaevnarWhite" alt="welcome image" class="w-96">
         </div>
       </div>
-      <img :src="WelcomeImg" alt="welcome image" class="w-full img-size-custom">
+      <img :src="WelcomeImg" alt="welcome image" class="w-full img-banner-size-custom">
     </div>
 </template>
+
+<style>
+  .img-frame-custom {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+  }
+  .img-banner-size-custom {
+    top: -0px;
+    position: absolute;
+  }
+</style>

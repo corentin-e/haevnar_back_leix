@@ -27,23 +27,11 @@
     </div>
       <!-- News - Components -->
     <WelcomeActualities/>
-  
+
   </div>
 </template>
 
 <style>
-.img-frame-custom {
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  height: 600px;
-}
-.img-size-custom {
-  top: -300px;
-  position: absolute;
-}
-
 .text-first-custom::first-letter {
   font-family: "Slackside One", cursive;
   font-size: 64px;
@@ -67,5 +55,4 @@
   font-size: 33px;
   color: var(--haev_orange)
 }
-
 </style>
