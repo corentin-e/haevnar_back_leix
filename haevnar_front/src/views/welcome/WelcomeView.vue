@@ -27,7 +27,6 @@
     </div>
       <!-- News - Components -->
     <WelcomeActualities/>
-
   </div>
 </template>
 

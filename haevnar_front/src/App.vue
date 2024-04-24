@@ -39,12 +39,12 @@ const loadApplication = () => {
 
 <template >
   <div
-    class="w-100 transition-all duration-500 theme-mode h-full"
+    class="w-100 transition-all duration-500 theme-mode h-screen"
   >
     <WelcomeLoader
       v-if="loaderActive"
       id="loader"
-      class="loader w-full"
+      class="loader w-full h-full"
       @load="loadApplication"/>
     <HeaderPage/>
     <router-view></router-view>
@@ -62,4 +62,4 @@ const loadApplication = () => {
   overflow: hidden;
   opacity: 0;
 }
-</style>./components/loading/loading_specific/welcome/WelcomeLoader.vue
+</style>

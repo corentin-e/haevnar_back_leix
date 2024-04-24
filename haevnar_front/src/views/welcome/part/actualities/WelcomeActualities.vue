@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import CarouselAllianceActuality from '@/components/carousel/specific/CarouselAllianceActuality.vue'
+import CarouselTest from '@/components/carousel/generic/CarouselTest.vue'
 
 </script>
 
@@ -12,6 +11,6 @@ import CarouselAllianceActuality from '@/components/carousel/specific/CarouselAl
       <span class="title-sub-new-custom">
         Vie de l'alliance
       </span>
-      <CarouselAllianceActuality/>
+      <CarouselTest/>
     </div>
 </template>
