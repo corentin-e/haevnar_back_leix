@@ -16,6 +16,10 @@ const themeMode = computed(() => {
   return theme.theme
 })
 
+const themeModeNemesis = computed(() => {
+  return theme.theme
+})
+
 watch(themeMode, (newTheme) => {
   if(newTheme == 'dark') {
     document.documentElement.style.setProperty('--bg_app', 'var(--haev_bg_mode_dark)');
@@ -25,6 +29,15 @@ watch(themeMode, (newTheme) => {
     document.documentElement.style.setProperty('--text_app', 'var(--haev_text_mode_light)');
   }
 })
+watch(themeModeNemesis, (newTheme) => {
+  if(newTheme == 'dark') {
+    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_light)');
+    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_dark)');
+  } else {
+    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_dark)');
+    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_light)');
+  }
+})
 
 const loadApplication = () => {
   const loader = document.getElementById('loader')
@@ -32,10 +45,6 @@ const loadApplication = () => {
 }
 
 </script>
-
-<header>
-
-</header>
 
 <template >
   <div

@@ -27,13 +27,31 @@ body {
   --haev_bg_mode_light: var(--haev_white);
 
   --bg_app: var(--haev_bg_mode_dark);
+  --bg_app_nemesis: var(--haev_bg_mode_light);
   --text_app: var(--haev_text_mode_dark);
+  --text_app_nemesis: var(--haev_text_mode_light);
   --icon_app: var(--haev_icon_mode_dark);
 }
 
 .theme-mode {
   background-color: var(--bg_app);
   color: var(--text_app);
+}
+
+.bg-mode {
+  background-color: var(--bg_app);
+}
+
+.text-mode {
+  color: var(--text_app);
+}
+
+.bg-nemesis-mode {
+  background-color: var(--bg_app_nemesis);
+}
+
+.text-nemesis-mode {
+  color: var(--text_app_nemesis);
 }
 
 @tailwind base;

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import CarouselTest from '@/components/carousel/generic/CarouselTest.vue'
+  import CarouselAllianceActuality from '@/components/carousel/specific/CarouselAllianceActuality.vue'
+  import CarouselScActuality from '@/components/carousel/specific/CarouselScActuality.vue'
+  import ShortListNewClan from '@/components/list/specific/ShortListNewClan.vue';
+  import ShortListNewMembers from '@/components/list/specific/ShortListNewMembers.vue';
+  import ShortListNewEvents from '@/components/list/specific/ShortListNewEvents.vue';
 
 </script>
 
@@ -11,6 +15,12 @@ import CarouselTest from '@/components/carousel/generic/CarouselTest.vue'
       <span class="title-sub-new-custom">
         Vie de l'alliance
       </span>
-      <CarouselTest/>
+      <CarouselAllianceActuality/>
+      <div class="flex w-full mt-16 justify-between">
+        <ShortListNewMembers class="mr-16"/>
+        <ShortListNewClan class="mr-16"/>
+        <ShortListNewEvents/>
+      </div>
+      <CarouselScActuality class="mt-16"/>
     </div>
 </template>

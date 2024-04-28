@@ -11,7 +11,7 @@ export default {
     extend: {},
     colors: {
       haev_black: '#000000',
-      haev_blue: '#2D72A4',
+      haev_dark_blue: '#2D72A4',
       haev_dark: '#323436',
       haev_orange: '#F77C04',
       haev_white: '#E4E4E4',

@@ -17,7 +17,7 @@
 </script>
 
 <template>
-  <div class="w-full justify-center flex flex-col pt-5">
+  <div class="w-full justify-center flex flex-col pt-5 bg-haev_dark">
     <WelcomePresentation/>
     <!-- Button - Banneer - Components -->
     <div class="bg-haev_orange p-5 flex justify-center">
