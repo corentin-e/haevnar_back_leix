@@ -10,7 +10,7 @@ class Event(models.Model):
     emplacement = models.CharField(max_length=100)
     date = models.DateTimeField()
     created_by = models.ForeignKey(DiscordUser, on_delete=models.CASCADE, blank=True)
-    roles = models.ManyToManyField('Role', related_name='roles')
+    roles = models.TextField('Role', null=True, blank=True)
 
 class Role(models.Model):
     name = models.CharField(max_length=100)
