@@ -12,13 +12,12 @@
 
 <template>
     <CardList 
-        bg-card="haev_white"
-        bgTagCard="haev_dark"
         :tags="tagsArray"
+        card-item
     >
         <div class="flex p-5 justify-between h-24 items-center">
-            <span class="text-nemesis-mode font-bold text-lg">03-04-24</span>
-            <span class="text-nemesis-mode font-bold text-lg">OmniWorks</span>
+            <span class="text-nemesis-mode font-bold text-lg transition-all duration-500">03-04-24</span>
+            <span class="text-nemesis-mode font-bold text-lg transition-all duration-500">OmniWorks</span>
             <img :src="OmniLogo" alt="" class="w-20">
         </div>
     </CardList>

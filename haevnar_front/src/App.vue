@@ -5,6 +5,7 @@ import { useThemeStore } from '@/stores/app-store'
 
 import WelcomeLoader from '@/components/loading/specific/welcome/WelcomeLoader.vue'
 import HeaderPage from '@/components/HeaderPage.vue'
+import FooterPage from '@/components/FooterPage.vue'
 
 const theme = useThemeStore()
 
@@ -31,11 +32,13 @@ watch(themeMode, (newTheme) => {
 })
 watch(themeModeNemesis, (newTheme) => {
   if(newTheme == 'dark') {
-    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_light)');
-    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_dark)');
+    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_nemesis_dark)');
+    document.documentElement.style.setProperty('--bg_tag_nemesis', 'var(--haev_bg_tag_mode_nemesis_dark)');
+    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_nemesis_dark)');
   } else {
-    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_dark)');
-    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_light)');
+    document.documentElement.style.setProperty('--bg_app_nemesis', 'var(--haev_bg_mode_nemesis_light)');
+    document.documentElement.style.setProperty('--bg_tag_nemesis', 'var(--haev_bg_tag_mode_nemesis_light)');
+    document.documentElement.style.setProperty('--text_app_nemesis', 'var(--haev_text_mode_nemesis_light)');
   }
 })
 

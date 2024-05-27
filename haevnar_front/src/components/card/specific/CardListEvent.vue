@@ -18,10 +18,10 @@
         card-image
     >
         <div class="flex justify-between h-24 items-center relative">
-            <div class="flex bg-haev_black opacity-40 w-full absolute justify-between p-5 h-full items-end">
+            <div class="flex bg-haev_black opacity-40 w-full absolute justify-between p-5 h-full items-end z-30">
                 <div class="state-indicator"></div>
             </div>
-            <span class="font-bold text-lg absolute right-5 bottom-5">03-03-24 | 10:00</span>
+            <span class="font-bold text-lg absolute right-5 bottom-5 transition-all duration-500 z-40 text-haev_white">03-03-24 | 10:00</span>
         </div>
     </CardList>
 </template>

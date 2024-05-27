@@ -21,7 +21,7 @@
 
 <template>
     <div 
-        class="flex items-center justify-between px-5 text_mode"
+        class="flex items-center justify-between px-5 pb-4 text-mode bg-mode fixed z-40 w-full"
     >
         <RouterLink to="/">
             <img 
@@ -48,7 +48,7 @@
                     Alliances
                 </div>
             </RouterLink>
-            <RouterLink to="/events">
+            <!-- <RouterLink to="/events">
                 <div 
                     class="px-12 py-4 "
                     :class="getRouteName === 'events' ? 'text-haev_orange border-b border-b-haev_orange' : 'nav-link-custom'"
@@ -63,7 +63,7 @@
                 >
                     Inscription
                 </div>
-            </RouterLink>
+            </RouterLink> -->
         </div>
 
         <SwitchScreenMode

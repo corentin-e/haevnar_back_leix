@@ -21,15 +21,27 @@ body {
   --haev_icon_mode_dark: var(--haev_white);
   --haev_bg_mode_dark: var(--haev_dark);
 
+  --haev_text_mode_nemesis_dark: var(--haev_dark);
+  --haev_icon_mode_nemesis_dark: var(--haev_dark);
+  --haev_bg_mode_nemesis_dark: var(--haev_white);
+  --haev_bg_tag_mode_nemesis_dark: var(--haev_dark);
+
+
   /* Light Theme */
   --haev_text_mode_light: var(--haev_dark);
   --haev_icon_mode_light: var(--haev_dark);
   --haev_bg_mode_light: var(--haev_white);
 
+  --haev_text_mode_nemesis_light: var(--haev_white);
+  --haev_icon_mode_nemesis_light: var(--haev_white);
+  --haev_bg_mode_nemesis_light: var(--haev_dark);
+  --haev_bg_tag_mode_nemesis_light: var(--haev_white);
+
   --bg_app: var(--haev_bg_mode_dark);
-  --bg_app_nemesis: var(--haev_bg_mode_light);
+  --bg_app_nemesis: var(--haev_bg_mode_nemesis_dark);
+  --bg_tag_nemesis: var(--haev_bg_tag_mode_nemesis_dark);
   --text_app: var(--haev_text_mode_dark);
-  --text_app_nemesis: var(--haev_text_mode_light);
+  --text_app_nemesis: var(--haev_text_mode_nemesis_dark);
   --icon_app: var(--haev_icon_mode_dark);
 }
 
@@ -48,6 +60,10 @@ body {
 
 .bg-nemesis-mode {
   background-color: var(--bg_app_nemesis);
+}
+
+.bg-tag-nemesis-mode {
+  background-color: var(--bg_tag_nemesis);
 }
 
 .text-nemesis-mode {

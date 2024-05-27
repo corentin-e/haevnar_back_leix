@@ -6,10 +6,10 @@ import WelcomeImg from '@/assets/images/welcome-image.png'
 </script>
 
 <template>
-    <div class="overflow-hidden img-frame-custom">
+    <div class="overflow-hidden img-frame-custom h-1/2">
       <div class="relative text-haev_white z-20 w-full h-full p-24 text-custom">
         <div class="flex items-start h-full">
-          <div class="w-4/5">
+          <div class="w-4/5 overflow-scroll-haev max-h-96">
             <p class="text-first-custom text-custom">
               Bienvenue sur le site de l'Alliance d'Hævnär,
             </p>
@@ -44,5 +44,10 @@ import WelcomeImg from '@/assets/images/welcome-image.png'
   .img-banner-size-custom {
     top: -0px;
     position: absolute;
+  }
+
+  .overflow-scroll-haev {
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
 </style>

@@ -10,9 +10,8 @@
 
 <template>
     <CardList 
-        bg-card="haev_white"
-        bgTagCard="haev_dark"
         :tags="tagsArray"
+        card-item
     >
         <div class="flex p-5 justify-between h-24 items-center">
             <span class="text-nemesis-mode font-bold text-lg">03-04-24</span>
