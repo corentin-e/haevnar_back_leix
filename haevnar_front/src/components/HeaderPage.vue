@@ -69,6 +69,7 @@
         <SwitchScreenMode
             @screenMode="emit('screenMode')"
         />
+        
         </div>
 
     </div>
