@@ -1,21 +1,14 @@
 <script setup lang="ts">
 
   import { RouterLink } from 'vue-router'
-  import { onMounted } from 'vue'
 
   import WelcomePresentation from './part/presentation/WelcomePresentation.vue';
   import WelcomeActualities from './part/actualities/WelcomeActualities.vue';
-  import axios from 'axios'
 
   import { useThemeStore } from '@/stores/app-store'
 
   defineProps({
     darkModeActive: Boolean,
-  })
-
-  onMounted(() => {
-    const events = axios.get('http://localhost:8000/events/')
-    console.log('events', events)
   })
 
   const theme = useThemeStore()
@@ -33,7 +26,7 @@
       </RouterLink>
     </div> -->
       <!-- News - Components -->
-    <WelcomeActualities/>
+    <WelcomeActualities />
   </div>
 </template>
 
