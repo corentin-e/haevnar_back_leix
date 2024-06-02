@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Slackside+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Slackside+One&display=swap");
 
@@ -10,6 +11,10 @@ body {
   font-family: "Saira", sans-serif;
 }
 
+.font-title {
+  font-family: "Audiowide", sans-serif;
+}
+
 :root {
   --haev_blue: #2d72a4;
   --haev_dark: #323436;
@@ -20,6 +25,7 @@ body {
   --haev_text_mode_dark: var(--haev_white);
   --haev_icon_mode_dark: var(--haev_white);
   --haev_bg_mode_dark: var(--haev_dark);
+  --haev_shadow_mode_dark: var(--haev_white);
 
   --haev_text_mode_nemesis_dark: var(--haev_dark);
   --haev_icon_mode_nemesis_dark: var(--haev_dark);
@@ -31,6 +37,7 @@ body {
   --haev_text_mode_light: var(--haev_dark);
   --haev_icon_mode_light: var(--haev_dark);
   --haev_bg_mode_light: var(--haev_white);
+  --haev_shadow_mode_dark: var(--haev_dark);
 
   --haev_text_mode_nemesis_light: var(--haev_white);
   --haev_icon_mode_nemesis_light: var(--haev_white);

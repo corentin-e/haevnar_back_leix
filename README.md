@@ -9,7 +9,7 @@ Back
 ```
 Python version >= 3.10 et `pipenv` installe
 
-python -m pipenv install
+pip install pipenv
 
 ```
 Front
@@ -22,13 +22,15 @@ npm install ou yarn install
 
 ### Lancement du serveur (Back)
 
-python -m pipenv shell
+pipenv shell
+
+python manage.py runserver
 
 ou
 
-pipenv run haevnar/manage.py migrate // python manage.py migrate
+pipenv run manage.py migrate
  
-pipenv run haevnar/manage.py runserver // python manage.py runserver
+pipenv run manage.py runserver
 
 ### Authentification
 

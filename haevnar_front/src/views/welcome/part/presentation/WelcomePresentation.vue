@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import LogoShipHaevnarWhite from '@/assets/logos/logo_ship_haevnar_white.png'
+import LogoShipHaevnarWhite from '@/assets/logos/logo_haevnar_white_orange.png'
 import WelcomeImg from '@/assets/images/welcome-image.png'
 
 </script>

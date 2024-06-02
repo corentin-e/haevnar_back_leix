@@ -20,7 +20,7 @@
         <div class="top-0 right-0 absolute mt-9 mr-5">
             <SwitchScreenMode/>
         </div>
-        <span class="text-7xl text-center text-nowrap text-haev_orange">Haevnär</span>
+        <span class="text-7xl text-center text-nowrap text-haev_orange font-title">Haevnär</span>
         <WelcomeLoaderButton
             @load="$emit('load', $event)"
         />

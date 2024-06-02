@@ -5,8 +5,8 @@
 
     import SwitchScreenMode from '@/components/switch/specific/SwitchScreenMode.vue';
 
-    import LogoTitleHaevnarBlack from '../assets/logos/logo_haevnar_black_title.png'
-    import LogoTitleHaevnarWhite from '../assets/logos/logo_haevnar_white_title.png'
+    import LogoTitleHaevnarBlack from '@/assets/logos/logo_haevnar_black_title.png'
+    import LogoTitleHaevnarWhite from '@/assets/logos/logo_haevnar_white_title.png'
 
     const theme = useThemeStore()
 
@@ -21,7 +21,7 @@
 
 <template>
     <div 
-        class="flex items-center justify-between px-5 pb-4 text-mode bg-mode fixed z-40 w-full"
+        class="flex items-center justify-between px-5 py-4 text-mode bg-mode fixed z-40 w-full shadow-haev"
     >
         <RouterLink to="/">
             <img 
@@ -84,5 +84,8 @@
     .nav-link-custom:hover {
         color: #F77C04;
         border-bottom: 1px solid #F77C04;
+    }
+    .shadow-haev {
+        box-shadow: 0px 8px 23px #F77C04;
     }
 </style>
