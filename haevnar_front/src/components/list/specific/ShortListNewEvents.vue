@@ -18,8 +18,6 @@
         console.log('events', state.events)
     }
 
-    console.log('events', getEvents)
-
 </script>
 
 <template>
