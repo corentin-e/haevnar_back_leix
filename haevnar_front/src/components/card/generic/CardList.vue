@@ -33,13 +33,10 @@
             class="w-full rounded-br-md rounded-tr-md rounded-bl-md relative overflow-hidden"
         >
             <div v-if="tags">
-                <div 
-                    v-for="tag in tags"
-                    :key="`tag_${tag.name}`"
-                    class="w-fit pl-5 pr-5 rounded-br-md absolute font-semibold z-40 delay-0"
+                <div class="w-fit pl-5 pr-5 rounded-br-md absolute font-semibold z-40 delay-0"
                     :class="bgTagCard ? `bg-${bgTagCard}` : 'bg-tag-nemesis-mode'"
                 >
-                    {{ tag.name }} 
+                    {{ tags }} 
                 </div>
             </div>
                 <slot/>

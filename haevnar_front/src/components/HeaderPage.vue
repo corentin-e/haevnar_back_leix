@@ -21,7 +21,7 @@
 
 <template>
     <div 
-        class="flex items-center justify-between px-5 py-4 text-mode bg-mode fixed z-40 w-full shadow-haev"
+        class="flex items-center justify-between px-5 py-4 text-mode bg-mode fixed z-40 w-full shadow-haev-header"
     >
         <RouterLink to="/">
             <img 
@@ -85,7 +85,7 @@
         color: #F77C04;
         border-bottom: 1px solid #F77C04;
     }
-    .shadow-haev {
-        box-shadow: 0px 8px 23px #F77C04;
+    .shadow-haev-header {
+        box-shadow: 0 0 20px 15px #F77C04;
     }
 </style>
