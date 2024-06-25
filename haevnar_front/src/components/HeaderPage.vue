@@ -21,7 +21,7 @@
 
 <template>
     <div 
-        class="flex items-center justify-between px-5 py-4 text-mode bg-mode fixed z-40 w-full shadow-haev-header"
+        class="flex items-center justify-between px-5 py-4 text-mode bg-mode fixed z-40 w-full shadow-haev-header duration-500"
     >
         <RouterLink to="/">
             <img 

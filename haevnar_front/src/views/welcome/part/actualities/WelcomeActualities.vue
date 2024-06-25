@@ -16,10 +16,10 @@
         Vie de l'alliance
       </span>
       <CarouselAllianceActuality/>
-      <div class="flex w-full mt-16 justify-between">
-        <ShortListNewMembers class="mr-16"/>
-        <ShortListNewClan class="mr-16"/>
-        <ShortListNewEvents/>
+      <div class="grid grid-flow-col gap-5 w-full mt-16">
+        <ShortListNewMembers class="mr-16 col-span-4"/>
+        <ShortListNewClan class="mr-16 col-span-4"/>
+        <ShortListNewEvents class="col-span-1"/>
       </div>
       <CarouselScActuality class="mt-16"/>
     </div>

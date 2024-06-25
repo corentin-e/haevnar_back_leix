@@ -7,7 +7,7 @@ import WelcomeLoader from '@/components/loading/specific/welcome/WelcomeLoader.v
 import HeaderPage from '@/components/HeaderPage.vue'
 import FooterPage from '@/components/FooterPage.vue'
 
-//import axios from 'axios'
+import axios from 'axios'
 
 const theme = useThemeStore()
 
@@ -69,9 +69,9 @@ const loadApplication = async () => {
 
 const getEvents = async () => {
 
-  // const response: any = await axios.get('http://localhost:8000/events/')
+  const response: any = await axios.get('http://localhost:8000/events/')
   // MOCK
-  const response: any = await new Promise ((resolve) => {
+  /* const response: any = await new Promise ((resolve) => {
       setTimeout(() => {
           resolve({
               data: [
@@ -82,7 +82,7 @@ const getEvents = async () => {
               ]
           })
       }, 2000);
-  })
+  }) */
 
   events.value.push(response.data[0])
 }

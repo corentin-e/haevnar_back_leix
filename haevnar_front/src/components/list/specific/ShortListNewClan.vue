@@ -6,7 +6,6 @@
 <template>
     <ShortList 
         title-list="Nouveaux Clans"
-        w-list="1/2"
     >
         <CardListClan/>
     </ShortList>

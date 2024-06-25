@@ -6,7 +6,6 @@
 <template>
     <ShortList 
         title-list="Nouveaux Membres"
-        w-list="1/2"
     >
         <CardListMember/>
     </ShortList>

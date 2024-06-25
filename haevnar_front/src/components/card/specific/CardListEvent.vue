@@ -30,7 +30,7 @@
     >
         <div class="flex justify-between h-24 items-center relative">
             <div class="flex bg-haev_black opacity-40 w-full absolute justify-between p-5 h-full items-end z-30"></div>
-            <div class="absolute bg-haev_orange h-4 w-4 rounded-full z-40 bottom-3 left-3 shadow-haev-indicator shadow-haev_orange"></div>
+            <div class="absolute bg-haev_orange h-4 w-4 rounded-full z-40 bottom-3 left-3 shadow-haev-indicator"></div>
             <span class="font-bold text-lg absolute right-5 bottom-5 transition-all duration-500 z-40 text-haev_white">{{ formatDate(date) }} | 10:00</span>
         </div>
     </CardList>
@@ -38,10 +38,27 @@
 
 <style>
     .shadow-haev-indicator {
-        box-shadow: 0 0 3px 1px var(--haev_orange);
-        animation: shadowmove 1.5s infinite;
+        box-shadow: 0 0 0 rgba(247,124, 4, 0.4);
+        animation: shadowpulse 0.5s infinite alternate ease-in-out;
     }
-    @keyframes shadowmove {
-        100% {box-shadow: 0 0 9px 2px var(--haev_orange);}
+    @keyframes shadowpulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 rgba(247,124, 4, 0.4);
+            box-shadow: 0 0 0 0 rgba(247,124, 4, 0.4);
+        }
+        100% {
+            -moz-box-shadow: 0 0 7px 3px rgba(247,124, 4, 0.4);
+            box-shadow: 0 0 7px 3px rgba(247,124, 4, 0.4);
+        }
+    }
+    @-webkit-keyframes shadowpulse {
+        0% {
+            -moz-box-shadow: 0 0 0 0 rgba(247,124, 4, 0.4);
+            box-shadow: 0 0 0 0 rgba(247,124, 4, 0.4);
+        }
+        100% {
+            -moz-box-shadow: 0 0 7px 3px rgba(247,124, 4, 0.4);
+            box-shadow: 0 0 7px 3px rgba(247,124, 4, 0.4);
+        }
     }
 </style>
