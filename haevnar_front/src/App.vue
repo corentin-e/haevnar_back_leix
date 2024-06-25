@@ -7,6 +7,8 @@ import WelcomeLoader from '@/components/loading/specific/welcome/WelcomeLoader.v
 import HeaderPage from '@/components/HeaderPage.vue'
 import FooterPage from '@/components/FooterPage.vue'
 
+//import axios from 'axios'
+
 const theme = useThemeStore()
 
 theme.theme
@@ -42,9 +44,47 @@ watch(themeModeNemesis, (newTheme) => {
   }
 })
 
-const loadApplication = () => {
+
+//  TODO
+interface Events {
+    create_by: Number,
+    date: Date,
+    description: String,
+    emplacement: String,
+    id: Number,
+    name: String,
+}
+
+const events= ref([] as Events[])
+//  end TODO
+
+
+const loadApplication = async () => {
+  await getEvents()
+
   const loader = document.getElementById('loader')
   loader?.classList.add("hidden-loader")
+}
+
+
+const getEvents = async () => {
+
+  // const response: any = await axios.get('http://localhost:8000/events/')
+  // MOCK
+  const response: any = await new Promise ((resolve) => {
+      setTimeout(() => {
+          resolve({
+              data: [
+                  {
+                      name: 'test',
+                      date: '01-02-03',
+                  }
+              ]
+          })
+      }, 2000);
+  })
+
+  events.value.push(response.data[0])
 }
 
 </script>
@@ -54,12 +94,14 @@ const loadApplication = () => {
     class="w-100 transition-all duration-500 theme-mode h-screen"
   >
     <WelcomeLoader
-      v-if="loaderActive"
       id="loader"
       class="loader w-full h-full"
-      @load="loadApplication"/>
-    <HeaderPage/>
-    <router-view></router-view>
+      @load="loadApplication"
+    />
+    <template v-if="events.length !== 0">
+      <HeaderPage/>
+      <router-view></router-view>
+    </template>
   </div>
 
 </template>
